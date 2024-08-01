@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Timp</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+        <link href="assets/vendor/owl/owl.carousel.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="admin_header">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-2 text-center">
+                    <a class="logo" href="dashboard.html">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <div class="row">
+                        <!-- <div class="col-auto pe-2">
+                     <a class="language_change" href="javascript:;"><img src="assets/img/arabic.png" alt="">Arabic</a>
+                  </div> -->
+                        <div class="col-auto d-flex align-items-center">
+                            <div class="dropdown Profile_dropdown">
+                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/img/user.png" alt="">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="view-profile.html">View Profile</a></li>
+                                    <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                </ul>
+                            </div>
+                            <div class="toggle_btns">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin_main">
+            <div class="admin_siderbarr">
+                <div class="overlay_show"></div>
+                <a class="sidebar-link" href="dashboard.html">
+                    <span><i class="fas fa-home"></i></span>
+                    Dashboard
+                </a>
+                <a class="sidebar-link" href="users-management.html">
+                    <span><i class="fas fa-users"></i></span>
+                    Users Management
+                </a>
+                <a class="sidebar-link" href="merchant-management.html">
+                    <span><i class="fas fa-hotel"></i></span>
+                    Merchant Management
+                </a>
+                <a class="sidebar-link" href="rating-and-review.html">
+                    <span><i class="fas fa-stars"></i></span>
+                    Rating and Review
+                </a>
+                <a class="sidebar-link" href="deal-management.html">
+                    <span><i class="fas fa-handshake"></i></span>
+                    Deal Management
+                </a>
+                <a class="sidebar-link" href="subscription-plan.html">
+                    <span><i class="fas fa-hand-holding-usd"></i></span>
+                    Subscription Plan
+                </a>
+                <a class="sidebar-link" href="advertisement-package.html">
+                    <span><i class="fas fa-user"></i></span>
+                    Advertisement Package
+                </a>
+                <a class="sidebar-link" href="promotional-banner.html">
+                    <span><i class="fas fa-bullhorn"></i></span>
+                    Promotional Banner
+                </a>
+                <a class="sidebar-link" href="red-flag-content.html">
+                    <span><i class="fas fa-flag"></i></span>
+                    Red Flag Content
+                </a>
+                <a class="sidebar-link" href="transaction-management.html">
+                    <span><i class="fas fa-sync-alt"></i></span>
+                    Transaction Management
+                </a>
+                <a class="sidebar-link" href="maintenance-and-updates.html">
+                    <span><i class="fas fa-tools"></i></span>
+                    Maintenance and Updates
+                </a>
+                <a class="sidebar-link" href="help-&-Support.html">
+                    <span><i class="fas fa-headset"></i></span>
+                    Help & Support
+                </a>
+                <a class="sidebar-link" href="content-management.html">
+                    <span><i class="fas fa-edit"></i></span>
+                    Content Management
+                </a>
+                <a class="sidebar-link" href="login.html">
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    Logout
+                </a>
+            </div>
+            <div class="admin_contentpart">
+                <div class="">
+                    <button type="button" id="goback" class="comman_btn w-fit">Go Back</button>
+                </div>
+                <div class="row comman_design mx-0 mt-4">
+                    <div class="col-12">
+                        <div class="row comman_table pt-md-4 pb-md-4 pb-3 px-md-4 px-2">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <div class="mt-4">
+                                                    <div class="mt-2">
+                                                        <strong>Name : </strong>
+                                                        <span>Mohd. Arbab</span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <strong>Email : </strong>
+                                                        <span>xyz@gmail.com</span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <strong>Status : </strong>
+                                                        <span>
+                                                            <span class="ps-2 status_accepted">Active</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <strong>Rating : </strong>
+                                                        <span class="ps-1">
+                                                            <i class="fa fa-star main-color"></i>
+                                                            <i class="fa fa-star main-color"></i>
+                                                            <i class="fa fa-star main-color"></i>
+                                                            <i class="fa fa-star main-color"></i>
+                                                            <i class="fa fa-star "></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <strong>Review : </strong>
+                                                        <span>Good service</span>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <strong>Status Update : </strong>
+                                                        <span>
+                                                            <div class="ms-2 form-check form-switch custom-switch">
+                                                                <input class="form-check-input " type="checkbox"
+                                                                    id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label"
+                                                                    for="flexSwitchCheckChecked"></label>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <strong>Description : </strong>
+                                                        <span>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                                                            doloremque facilis cupiditate consequatur et, eius dicta
+                                                            ipsum
+                                                            dolorum minus alias aperiam nam ut maiores. Nemo at tempora
+                                                            repudiandae veniam temporibus?
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="user-img-wrapper">
+                                                        <img src="./assets/img/user1.png" alt="" class="w-100 h-100">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/vendor/jquery.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/owl/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $('#goback').on('click', function () {
+                history.back();
+            });
+        </script>
+
+
+
+    </body>
+
+</html>
