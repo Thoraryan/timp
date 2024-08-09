@@ -2273,7 +2273,7 @@ input[type="radio"] {
   height: 40px;
   line-height: 40px;
   padding: 0px 10px;
-  width: 200px;
+  width: 100px;
   font-size: 12px;
   font-weight: 500;
   border-radius: 99px;
@@ -2314,7 +2314,7 @@ input[id="radio-2"] {
   position: absolute;
   display: flex;
   height: 40px;
-  width: 200px;
+  width: 100px;
   background-color: #F2894F;
   z-index: 1;
   border-radius: 99px;
@@ -2424,7 +2424,7 @@ input[id="radio-2"] {
 }
 
 .custom-file-upload:hover {
-  background: #e49368;
+  background: #462F4C;
 }
 
 input[type="file"] {
@@ -2443,4 +2443,369 @@ input[type="file"] {
   height: 50px;
   overflow: hidden;
   border-radius: 50%;
+}
+
+.main-banner-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.banner-img {
+  position: absolute;
+  bottom: -72px;
+  left: 16px;
+  transform: rotate(45deg);
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.banner-img-2 {
+  position: absolute;
+  top: -100px;
+  left: 145px;
+  transform: rotate(45deg);
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.banner-img-3 {
+  position: absolute;
+  top: -77px;
+  left: -137px;
+  transform: rotate(45deg);
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.main-content-wrapper {
+  margin-left: 40%;
+  width: 70%;
+}
+
+.banner-img-wrapper {
+  width: 100px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.banner-link {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #F2894F;
+}
+
+.banner-order-now {
+  position: absolute;
+  right: 5%;
+  top: 21%;
+  border: 2px solid #fff;
+  padding: 15px 15px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  height: 113px;
+  line-height: 78px;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+  width: 113px;
+  transform: rotate(45deg);
+}
+
+.banner-order-now:hover,
+.banner-offer-price:hover {
+  background-color: #fff;
+  color: #F2894F;
+}
+
+.banner-order-now-text {
+  transform: rotate(-45deg);
+}
+
+.banner-offer-price {
+  position: absolute;
+  left: 29%;
+  top: 51%;
+  border: 2px solid #fff;
+  padding: 15px 15px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  height: 75px;
+  line-height: 42px;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+  width: 75px;
+  transform: rotate(45deg);
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.app__section {
+  min-width: 300px;
+  padding: 3rem;
+}
+
+.swal2-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.swal2-confirm.swal2-styled {
+  background-color: #F2894F !important;
+  color: #fff !important;
+}
+
+.swal2-cancel.swal2-styled {
+  background-color: #462F4C !important;
+  color: #fff !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.select-dropdown {
+  position: relative;
+}
+
+.select-dropdown__list {
+  position: absolute;
+  bottom: 0px;
+  background-color: #ddd;
+  z-index: 10;
+  color: #000;
+  border-radius: 8px;
+  width: 62px;
+  font-size: 12px;
+  padding: 8px 15px;
+  display: none;
+  left: -19px;
+  transition: all 0.6s ease-in-out;
+}
+
+.select-dropdown__list:hover,
+.select-dropdown__list a:hover {
+  background-color: #F2894F;
+  color: #fff;
+}
+
+.btn:focus {
+  border: 0px solid transparent !important;
+  box-shadow: 0 0 0 .25rem transparent !important;
+}
+
+.user-bio {
+  width: 102px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deal-add {
+  width: 210px;
+}
+
+.user-img {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.user-view-wrapper div.mt-2 {
+  display: flex;
+  gap: 10px;
+}
+
+.leading-4 {
+  font-size: 14px;
+}
+
+.user-view-wrapper div.mt-2 strong {
+  width: fit-content;
+  position: relative;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.user-view-wrapper div.mt-2 strong::before {
+  position: absolute;
+  top: 0;
+  right: -0px;
+  content: ":";
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.merchant-img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.leading-5 {
+  font-size: 10px;
+}
+
+.merchant-img-wrapper {
+  height: 200px;
+}
+
+.Cuisines-list li {
+  position: relative;
+}
+
+.Cuisines-list li::before {
+  position: absolute;
+  content: "✓";
+  top: 3px;
+  left: 0;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.bg-custom-secondary {
+  color: #fff;
+  background-color: #462F4C;
+}
+
+.promo-img-wrapper {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+}
+
+
+.coupon {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.5));
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.coupon::before,
+.coupon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.coupon::before {
+  left: 0;
+  background-image: radial-gradient(circle at 0 50%,
+      transparent 25px,
+      #F2894F 26px);
+}
+
+.coupon::after {
+  right: 0;
+  background-image: radial-gradient(circle at 100% 50%,
+      transparent 25px,
+      #F2894F 26px);
+}
+
+.coupon>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  width: 20%;
+  border-right: 2px dashed rgba(0, 0, 0, 0.13);
+}
+
+.left div {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.right {
+  width: 120px;
+  background-image: radial-gradient(circle at 100% 50%,
+      transparent 25px,
+      #fff 26px);
+}
+
+.right div {
+  font-family: "Libre Barcode 128 Text", cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  transform: rotate(-90deg);
+}
+
+.center h2 {
+  background: #fff;
+  color: #051036;
+  padding: 0 10px;
+  font-size: 2.15rem;
+  white-space: nowrap;
+}
+
+.center h3 {
+  font-size: 2.15rem;
+}
+
+.center small {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width:500px) {
+  .coupon {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .left div {
+    transform: rotate(0deg);
+  }
+
+  .right div {
+    transform: rotate(0deg);
+
+  }
 }

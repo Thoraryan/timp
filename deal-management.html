@@ -115,118 +115,235 @@
                 </a>
             </div>
             <div class="admin_contentpart">
-                <div class="row comman_design mx-0">
-                    <div class="col-12">
-                        <div class="row align-items-center justify-content-between py-md-4 py-3 px-md-3 px-2">
-                            <div class="col-md-auto mb-md-0 mb-3">
-                                <div class="headleft">
-                                    <h2>
-                                        Deal Management
-                                    </h2>
+                <div class="tabs nav nav-tabs" id="reportsTab" role="tablist">
+                    <input type="radio" id="radio-1" name="tabs" checked />
+                    <label class="tab nav-item active" for="radio-1" id="sales-tab" data-bs-toggle="tab" href="#sales"
+                        role="tab" aria-controls="sales" aria-selected="true">
+                        Offer
+                    </label>
+                    <input type="radio" id="radio-2" name="tabs" />
+                    <label class="tab nav-item" for="radio-2" id="users-tab" data-bs-toggle="tab" href="#users"
+                        role="tab" aria-controls="users" aria-selected="false">
+                        Promo Coupen
+                    </label>
+                    <span class="glider"></span>
+                </div>
+                <div class="tab-content mt-4" id="reportsTabContent">
+                    <div class="tab-pane common_table fade show active" id="sales" role="tabpanel"
+                        aria-labelledby="sales-tab">
+                        <div class="row comman_design mx-0 mt-4">
+                            <div class="col-12">
+                                <div class="row align-items-center justify-content-between py-md-4 py-3 px-md-3 px-2">
+                                    <div class="col-md-auto mb-md-0 mb-3">
+                                        <div class="headleft">
+                                            <h2>
+                                                Deal Management
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-items-center justify-content-end">
+                                        <div class="searchh_box position-relative">
+                                            <input class="form-control" type="search" placeholder="Search">
+                                            <button><i class="fas fa-search"></i></button>
+                                        </div>
+                                        <div class="fiterbutton">
+                                            <a data-bs-toggle="modal" data-bs-target="#fitermoddel" href="javascript:;">
+                                                <i class="fas fa-filter"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 d-flex align-items-center justify-content-end">
-                                <div class="searchh_box position-relative">
-                                    <input class="form-control" type="search" placeholder="Search">
-                                    <button><i class="fas fa-search"></i></button>
-                                </div>
-                                <div class="fiterbutton">
-                                    <a data-bs-toggle="modal" data-bs-target="#fitermoddel" href="javascript:;">
-                                        <i class="fas fa-filter"></i>
-                                    </a>
+                            <div class="col-12">
+                                <div class="row comman_table pt-md-3 pb-md-4 pb-3 px-md-3 px-2">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr class="text-center">
+                                                        <th>S.No.</th>
+                                                        <th>Restaurant NAME</th>
+                                                        <th>Restaurant Location</th>
+                                                        <th>Offer Percentage</th>
+                                                        <th>Expire Date</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td>1</td>
+                                                        <td>Restaurant Name</td>
+                                                        <td>
+                                                            <div class="user-bio deal-add">
+                                                                Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                                                Bangalore-560016
+                                                            </div>
+                                                        </td>
+                                                        <td>20 %</td>
+                                                        <td>20-02-2024</td>
+                                                        <td>
+                                                            <div class="status_accepted">
+                                                                Active
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <a href="offer-view.html" class="Table_btn me-2"><i
+                                                                        class="fa fa-eye"></i></a>
+                                                                <a href="javascript:;" class="Table_btn"><i
+                                                                        class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>1</td>
+                                                        <td>Restaurant Name</td>
+                                                        <td>
+                                                            <div class="user-bio deal-add">
+                                                                Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                                                Bangalore-560016
+                                                            </div>
+                                                        </td>
+                                                        <td>20 %</td>
+                                                        <td>20-02-2024</td>
+                                                        <td>
+                                                            <div class="status_accepted">
+                                                                Active
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <a href="offer-view.html" class="Table_btn me-2"><i
+                                                                        class="fa fa-eye"></i></a>
+                                                                <a href="javascript:;" class="Table_btn"><i
+                                                                        class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>1</td>
+                                                        <td>Restaurant Name</td>
+                                                        <td>
+                                                            <div class="user-bio deal-add">
+                                                                Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                                                Bangalore-560016
+                                                            </div>
+                                                        </td>
+                                                        <td>20 %</td>
+                                                        <td>20-02-2024</td>
+                                                        <td>
+                                                            <div class="status_accepted">
+                                                                Active
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <a href="offer-view.html" class="Table_btn me-2"><i
+                                                                        class="fa fa-eye"></i></a>
+                                                                <a href="javascript:;" class="Table_btn"><i
+                                                                        class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>1</td>
+                                                        <td>Restaurant Name</td>
+                                                        <td>
+                                                            <div class="user-bio deal-add">
+                                                                Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                                                Bangalore-560016
+                                                            </div>
+                                                        </td>
+                                                        <td>20 %</td>
+                                                        <td>20-02-2024</td>
+                                                        <td>
+                                                            <div class="status_accepted">
+                                                                Active
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <a href="offer-view.html" class="Table_btn me-2"><i
+                                                                        class="fa fa-eye"></i></a>
+                                                                <a href="javascript:;" class="Table_btn"><i
+                                                                        class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="row comman_table pt-md-3 pb-md-4 pb-3 px-md-3 px-2">
+                    <div class="tab-pane common_table fade" id="users" role="tabpanel" aria-labelledby="users-tab">
+                        <div class="row comman_design mx-0 mt-4">
                             <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr class="text-center">
-                                                <th>S.No.</th>
-                                                <th>DEAL NAME</th>
-                                                <th>MERCHANT</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="text-center">
-                                                <td>1</td>
-                                                <td>50% Off on Burger</td>
-                                                <td>Merchant A</td>
-                                                <td>
-                                                    <div class="status_accepted">
-                                                        Active
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <a href="deal-view.html" class="Table_btn me-2"><i
-                                                                class="fa fa-eye"></i></a>
-                                                        <a href="javascript:;" class="Table_btn"><i
-                                                                class="fa fa-trash"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>1</td>
-                                                <td>50% Off on Burger</td>
-                                                <td>Merchant A</td>
-                                                <td>
-                                                    <div class="status_accepted">
-                                                        Active
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <a href="deal-view.html" class="Table_btn me-2"><i
-                                                                class="fa fa-eye"></i></a>
-                                                        <a href="javascript:;" class="Table_btn"><i
-                                                                class="fa fa-trash"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>1</td>
-                                                <td>50% Off on Burger</td>
-                                                <td>Merchant A</td>
-                                                <td>
-                                                    <div class="status_accepted">
-                                                        Active
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <a href="deal-view.html" class="Table_btn me-2"><i
-                                                                class="fa fa-eye"></i></a>
-                                                        <a href="javascript:;" class="Table_btn"><i
-                                                                class="fa fa-trash"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>1</td>
-                                                <td>50% Off on Burger</td>
-                                                <td>Merchant A</td>
-                                                <td>
-                                                    <div class="status_accepted">
-                                                        Active
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <a href="deal-view.html" class="Table_btn me-2"><i
-                                                                class="fa fa-eye"></i></a>
-                                                        <a href="javascript:;" class="Table_btn"><i
-                                                                class="fa fa-trash"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="row align-items-center justify-content-between py-md-4 py-3 px-md-3 px-2">
+                                    <div class="col-md-auto mb-md-0 mb-3">
+                                        <div class="headleft">
+                                            <h2>
+                                                Promo Coupen Management
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-items-center justify-content-end">
+                                        <div class="searchh_box position-relative">
+                                            <input class="form-control" type="search" placeholder="Search">
+                                            <button><i class="fas fa-search"></i></button>
+                                        </div>
+                                        <div class="fiterbutton">
+                                            <a data-bs-toggle="modal" data-bs-target="#fitermoddel" href="javascript:;">
+                                                <i class="fas fa-filter"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row comman_table pt-md-3 pb-md-4 pb-3 px-md-3 px-2">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr class="text-center">
+                                                        <th>PROMO/COUPON CODE</th>
+                                                        <th>DESCRIPTION</th>
+                                                        <th>DISCOUNT</th>
+                                                        <th>VALIDITY</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td>SUMMER20</td>
+                                                        <td>20% off summer sale</td>
+                                                        <td>
+                                                            20 %
+                                                        </td>
+                                                        <td>30-06-2024</td>
+                                                        <td>
+                                                            <div class="status_accepted">
+                                                                Active
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <a href="promo-coupen-view.html"
+                                                                    class="Table_btn me-2"><i class="fa fa-eye"></i></a>
+                                                                <a href="javascript:;" class="Table_btn"><i
+                                                                        class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

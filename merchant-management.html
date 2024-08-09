@@ -119,8 +119,8 @@
                     <div class="d-flex justify-content-between">
                         <div class="tabs nav nav-tabs" id="reportsTab" role="tablist">
                             <input type="radio" id="radio-1" name="tabs" checked />
-                            <label class="tab nav-item" for="radio-1" id="sales-tab" data-bs-toggle="tab" href="#sales"
-                                role="tab" aria-controls="sales" aria-selected="true">
+                            <label class="tab nav-item active" for="radio-1" id="sales-tab" data-bs-toggle="tab"
+                                href="#sales" role="tab" aria-controls="sales" aria-selected="true">
                                 New Merchant Registration Details
                             </label>
                             <input type="radio" id="radio-2" name="tabs" />
@@ -173,6 +173,7 @@
                                                                 <th>S.No.</th>
                                                                 <th>Name</th>
                                                                 <th>Email</th>
+                                                                <th>Mobile No.</th>
                                                                 <th>Action</th>
                                                             </tr>
                                                         </thead>
@@ -181,15 +182,15 @@
                                                                 <td>1</td>
                                                                 <td>Mohd. Arbab</td>
                                                                 <td>xyz@gmail.com</td>
+                                                                <td>+971 0000 0000 00</td>
                                                                 <td>
                                                                     <div class="d-flex justify-content-center gap-2">
-                                                                        <div class="status_accepted_bg">
+                                                                        <div class="status_accepted_bg"
+                                                                            onclick="acceptAlert()">
                                                                             Accept
                                                                         </div>
                                                                         <div class="status_declained_bg"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#rejectRefundModal"
-                                                                            data-order-id="12345">
+                                                                            onclick="DeclinedAlert()">
                                                                             Declined
                                                                         </div>
                                                                     </div>
@@ -239,8 +240,12 @@
                                                         <thead>
                                                             <tr class="text-center">
                                                                 <th>S.No.</th>
+                                                                <th class="">Image</th>
                                                                 <th>Name</th>
                                                                 <th>Email</th>
+                                                                <th>Mobile No.</th>
+                                                                <th>Restaurant Name</th>
+                                                                <th>Location</th>
                                                                 <th>Status</th>
                                                                 <th>Action</th>
                                                             </tr>
@@ -248,8 +253,21 @@
                                                         <tbody>
                                                             <tr class="text-center">
                                                                 <td>1</td>
+                                                                <td>
+                                                                    <div class="merchant-img">
+                                                                        <img src="./assets/img/pizza1.jpg" alt=""
+                                                                            class="w-100 h-100">
+                                                                    </div>
+                                                                </td>
                                                                 <td>Mohd. Arbab</td>
                                                                 <td>xyz@gmail.com</td>
+                                                                <td>+971 0000 0000 00</td>
+                                                                <td>
+                                                                    Hot Restaurant
+                                                                </td>
+                                                                <td>
+                                                                    New York
+                                                                </td>
                                                                 <td>
                                                                     <span class="status_accepted">Active</span>
                                                                 </td>
@@ -277,34 +295,14 @@
             </div>
         </div>
 
-
-        <!-- Reject Modal -->
-        <div class="modal fade top-25" id="rejectRefundModal" tabindex="-1" aria-labelledby="rejectRefundModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-md">
-                <div class="modal-content ">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="rejectRefundModalLabel">Reject New Merchant</h5>
-                        <a role="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form-design" id="rejectRefundForm">
-                            <div class="form-group">
-                                <label for="rejectReason" class="form-label">Reason for Rejection</label>
-                                <textarea class="form-control" id="rejectReason" rows="3" required></textarea>
-                            </div>
-                            <a role="button" class="comman_btn mt-3 w-fit">Confirm Rejection</a>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <script src="assets/vendor/jquery.min.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/owl/owl.carousel.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+        </script>
 
 
 
