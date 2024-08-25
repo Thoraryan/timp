@@ -8,3 +8,161 @@
         max-width: 1250px !important;
     }
 }
+
+@media (max-width: 1023px) {
+    .navbar-wrapper .nav .nav-item .nav-link {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .banner-wrapper .banner-heading {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .banner-wrapper .banner-paragraph {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .banner-m-img-wrapper {
+        width: 100%;
+        height: fit-content;
+        padding: 0 3.5rem;
+    }
+
+    .banner-wrapper {
+        margin-top: 40px;
+    }
+
+    .banner .banner-text-area::before {
+        top: -50%;
+        left: -35%;
+    }
+
+    .banner .banner-1-m-wrapper .dot-1 {
+        left: 7%;
+    }
+
+    .banner .banner-1-m-wrapper .dot-2 {
+        right: -2%;
+    }
+
+    .banner .banner-1-m-wrapper .dot-3 {
+        left: 2%;
+    }
+
+    .banner .banner-m-img-wrapper::after {
+        width: 107%;
+        height: 143%;
+        top: -33%;
+        right: -6%;
+    }
+
+    .banner-2-wrapper {
+        padding: 40px 0px;
+    }
+
+    .banner-text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .banner-text span {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .footer-list .list-group a {
+        font-size: 16.48px;
+        line-height: 18px;
+    }
+
+    .banner-4 .banner-wrapper {
+        padding: 40px 0px;
+    }
+}
+
+@media (max-width: 765px) {
+    .banner-wrapper {
+        margin-top: 20px;
+    }
+
+    .banner-wrapper .banner-heading {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .banner-wrapper .banner-paragraph {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .banner-m-img-wrapper {
+        width: 100%;
+        height: fit-content;
+        padding: 1rem 4rem;
+    }
+
+    .banner .banner-1-m-wrapper .dot-2 {
+        right: 6%;
+    }
+
+    .banner .banner-m-img-wrapper::after {
+        width: 101%;
+        height: 125%;
+        top: -24%;
+        right: -5%;
+    }
+
+    .banner-text-area {
+        margin-top: 1.5rem;
+    }
+
+    .banner .banner-text-area::before {
+        width: 38%;
+        height: 77%;
+        top: -39%;
+        left: -12%;
+    }
+
+    .banner-2-wrapper {
+        padding: 30px 0px;
+    }
+
+    .banner-text {
+        font-size: 26px;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    .banner-3::before {
+        width: 64%;
+        height: 64%;
+        top: 28%;
+        left: -27%;
+    }
+
+    .banner-4 .banner-wrapper {
+        padding: 30px 0px;
+    }
+
+    .footer {
+        padding: 30px 0px 0px 0px;
+    }
+
+    .footer-paragraph {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .footer-list .list-group a {
+        font-size: 18.48px;
+        line-height: 34px;
+    }
+
+    .footer-end-text {
+        font-size: 7px;
+        line-height: 14px;
+    }
+}

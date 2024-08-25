@@ -6,6 +6,7 @@
 body,
 html {
   background-color: #fff;
+  overflow-x: hidden;
   font-family: 'Poppins';
 }
 
@@ -239,13 +240,111 @@ h6 {
 .navbar-wrapper .nav .nav-item .nav-link {
   color: #000000;
   font-weight: 400;
-  size: 24px;
+  font-size: 18px;
   line-height: 36px;
 }
 
 .logo-wrapper {
   width: 116px;
   height: 60.48px;
+}
+
+.main-header .nav .nav-item .nav-link.active {
+  color: #F2894F;
+}
+
+.mobile-header {
+  position: fixed;
+  z-index: 20;
+  width: 0%;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  right: -5%;
+  transition: all .6s ease-in-out;
+}
+
+.mobile-header .navbar .nav-item .nav-link {
+  color: #000000;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.mobile-header .navbar .nav-item .nav-link.active {
+  color: #F2894F;
+}
+
+.banner .banner-text-area {
+  position: relative;
+  z-index: 5;
+}
+
+.banner .banner-text-area::before {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  top: -50%;
+  left: -20%;
+  gap: 0px;
+  background: radial-gradient(50% 50% at 50% 50%, #462F4C 0%, rgba(255, 186, 219, 0) 100%);
+  rotate: -50deg;
+  opacity: 11%;
+  z-index: -1;
+}
+
+.banner .banner-m-img-wrapper {
+  position: relative;
+  z-index: 5;
+}
+
+.banner .banner-m-img-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 157%;
+  height: 160%;
+  top: -20%;
+  right: -11%;
+  gap: 0px;
+  background: radial-gradient(50% 50% at 50% 50%, #F2894F52 0%, rgba(255, 186, 219, 0) 100%);
+  rotate: 45deg;
+  /* opacity: 3%; */
+  z-index: 1;
+}
+
+.banner .banner-1-m-wrapper {
+  position: relative;
+}
+
+.banner .banner-1-m-wrapper .dot-1 {
+  background-color: #F2894F;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.banner .banner-1-m-wrapper .dot-2 {
+  background-color: #F2894F;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  right: -8%;
+}
+
+.banner .banner-1-m-wrapper .dot-3 {
+  background-color: #F2894F;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
 }
 
 .banner-wrapper {
@@ -295,7 +394,43 @@ h6 {
   text-align: right;
 }
 
+.banner-3 {
+  position: relative;
+}
+
+.banner-3::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  bottom: -40%;
+  left: -20%;
+  gap: 0px;
+  opacity: 0.5px;
+  background: radial-gradient(50% 50% at 50% 50%, #FD325052 0%, rgba(255, 186, 219, 0) 100%);
+  rotate: -30deg;
+  opacity: 90%;
+  z-index: 1;
+}
+
+.banner-3::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  bottom: -40%;
+  right: -20%;
+  gap: 0px;
+  opacity: 0.5px;
+  background: radial-gradient(50% 50% at 50% 50%, #462F4C36 0%, rgba(255, 186, 219, 0) 100%);
+  rotate: -30deg;
+  opacity: 20%;
+  z-index: 1;
+}
+
 .banner-4 {
+  position: relative;
+  z-index: 5;
   background: #FDECE2;
 }
 
@@ -352,7 +487,55 @@ h6 {
 }
 
 .meet {
+  position: relative;
   padding: 50px 120px;
+}
+
+.meet::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 48%;
+  bottom: -20%;
+  right: -20%;
+  gap: 0px;
+  background: radial-gradient(50% 50% at 50% 50%, #462F4C 0%, rgba(255, 186, 219, 0) 100%);
+  rotate: 50deg;
+  opacity: 30%;
+  z-index: 1;
+}
+
+.meet-wrapper {
+  position: relative;
+  z-index: 5;
+}
+
+.meet .meet-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 66%;
+  top: -20%;
+  left: -30%;
+  gap: 0px;
+  background: radial-gradient(50% 50% at 50% 50%, #462F4C 0%, rgba(255, 186, 219, 0) 100%);
+  rotate: 50deg;
+  opacity: 20%;
+  z-index: 1;
+}
+
+.meet .meet-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 66%;
+  top: -30%;
+  right: -40%;
+  gap: 0px;
+  background: radial-gradient(50% 50% at 50% 50%, #F2894F52 0%, rgba(255, 186, 219, 0) 100%);
+  rotate: 50deg;
+  opacity: 60%;
+  z-index: 1;
 }
 
 .meet .meet-text {
@@ -388,8 +571,10 @@ h6 {
 }
 
 .our-story {
+  position: relative;
   background: #FDECE2;
   padding: 50px 0;
+  z-index: 8;
 }
 
 .our-story-img-wrapper {
@@ -444,7 +629,27 @@ h6 {
   height: 100vh;
   display: grid;
   place-items: center;
-  backdrop-filter: blur(20px);
+  background: inherit;
+  backdrop-filter: blur(40px);
+}
+
+.download-wrapper .download-content {
+  position: relative;
+  z-index: 10;
+}
+
+.download .meet .meet-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 28%;
+  height: 79%;
+  top: -35%;
+  right: -8%;
+  gap: 0px;
+  background: radial-gradient(50% 50% at 50% 50%, #F2894F52 0%, rgba(255, 186, 219, 0) 100%);
+  rotate: 50deg;
+  opacity: 100%;
+  z-index: 1;
 }
 
 .about-us-banner .about-us-heading {

@@ -16,7 +16,8 @@
         <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
         <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
         <link href="assets/vendor/owl/owl.carousel.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="assets/css/style.css" rel="stylesheet" />
         <link href="assets/css/responsive.css" rel="stylesheet" />
     </head>
@@ -26,16 +27,16 @@
             <div class="container">
                 <div class="main-header py-3">
                     <div class="row align-items-center">
-                        <div class="col-md-4">
+                        <div class="col-lg-md-4 col-md-2 col-6">
                             <div class="logo-wrapper">
                                 <img src="./assets/img/logo.png" alt="" class="logo w-100 h-100">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-md-6 col-md-8 d-md-block d-none">
                             <div class="navbar-wrapper">
                                 <ul class="nav navbar">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link text-main">Home</a>
+                                        <a href="index.html" class="nav-link active">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="meet.html" class="nav-link">Meet the Team</a>
@@ -49,10 +50,35 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-2 text-end">
+                        <div class="col-lg-md-2 col-md-2 d-md-block d-none text-end">
                             <button class="common_btn">Merchant</button>
                         </div>
+                        <div class="col-6 d-md-none d-block text-end">
+                            <button class="border-0 bg-transparent" onclick="slideBarOpen()">
+                                <i class="fa fa-bars fs-4 fw-bold mb-0"></i>
+                            </button>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="mobile-header">
+                <div class="py-3 px-4">
+                    <div class="d-flex w-100 justify-content-end" onclick="slideBarClose()">
+                        <button class="bg-transparent border-0">
+                            <i class="fa fa-close fs-4 fw-bold text-dark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="navbar-wrapper">
+                    <ul class="p-0 navbar d-block">
+                        <li class="list-group nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="list-group nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -61,19 +87,19 @@
             <div class="banner-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-7 order-1 order-md-0">
                             <div class="d-flex h-100 align-items-center">
-                                <div>
+                                <div class="banner-text-area">
                                     <h1 class="banner-heading">
                                         Track and share your favorite restaurants with your friends
                                     </h1>
                                     <p class="banner-paragraph">DOWNLOAD NOW ON THE APP STORE AND PLAY STORE</p>
                                     <div class="download-btn-wrapper">
                                         <div class="row">
-                                            <div class="col-3">
+                                            <div class="col-lg-3 col-md-5 col-6">
                                                 <img src="./assets/img/IphoneAppStore.png" alt="" class="w-100 h-100">
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-lg-3 col-md-5 col-6">
                                                 <img src="./assets/img/PlayStore.png" alt="" class="w-100 h-100">
                                             </div>
                                         </div>
@@ -81,11 +107,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="d-flex justify-content-end">
-                                <div class="banner-m-img-wrapper">
-                                    <img src="./assets/img/mobile.png" alt="" class="mobile w-100 h-100">
+                        <div class="col-md-5 order-0 order-md-1">
+                            <div class="banner-1-m-wrapper">
+                                <div class="dot-1"></div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="banner-m-img-wrapper">
+                                        <img src="./assets/img/mobile.png" alt="" class="mobile w-100 h-100">
+                                    </div>
                                 </div>
+                                <div class="dot-2"></div>
+                                <div class="dot-3"></div>
                             </div>
                         </div>
                     </div>
@@ -171,11 +202,11 @@
                                         </h4>
                                     </div>
                                     <div class="download-btn-wrapper w-100">
-                                        <div class="row justify-content-end">
-                                            <div class="col-3">
+                                        <div class="row justify-content-end mt-2 mt-md-0">
+                                            <div class="col-lg-3 col-md-4 col-6">
                                                 <img src="./assets/img/IphoneAppStore.png" alt="" class="w-100 h-100">
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-lg-3 col-md-4 col-6">
                                                 <img src="./assets/img/PlayStore.png" alt="" class="w-100 h-100">
                                             </div>
                                         </div>
@@ -207,7 +238,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="">
-                            <div class="w-fit mx-auto">
+                            <div class="w-fit mx-md-auto mx-0">
                                 <h5 class="h5 fw-semibold mb-3">Customer Services</h5>
                                 <ul class="p-0">
                                     <li class="list-group py-2">About Us</li>
@@ -219,23 +250,23 @@
                     </div>
                     <div class="col-md-4">
                         <div class="row align-items-center mt-3">
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-2">
                                 <div class="bg-main footer-contact rounded-3">
                                     <img src="./assets/img/email.png" alt="" class="">
                                 </div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-10">
                                 <p class="h6 fw-light">Email:</p>
                                 <p class="h6 fw-semibold">contact@mindleague.com</p>
                             </div>
                         </div>
                         <div class="row align-items-center mt-3">
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-2">
                                 <div class="bg-main footer-contact rounded-3">
                                     <img src="./assets/img/call.png" alt="" class="">
                                 </div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-10">
                                 <p class="h6 fw-light">Phone:</p>
                                 <p class="h6 fw-semibold">(345) 678 - 2345</p>
                             </div>
@@ -245,7 +276,7 @@
                 <div class="row">
                     <div class="col-12 border-bottom">
                         <div class="footer-list pt-4 pb-3">
-                            <ul class="p-0 d-flex justify-content-center gap-4">
+                            <ul class="p-0 d-block d-md-flex justify-content-center d- gap-4">
                                 <li class="list-group">
                                     <a href="" class="text-decoration-none active">Facebook</a>
                                 </li>
@@ -267,8 +298,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="w-fit mx-auto py-3">
-                            <p class="footer-end-text">
+                        <div class="w-fit mx-auto py-md-3 py-2 ">
+                            <p class="footer-end-text mb-0">
                                 Copyright Timp | All Rights Reserved | Terms and Conditions | Privacy Policy
                             </p>
                         </div>
