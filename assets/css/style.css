@@ -11,16 +11,26 @@ html {
 
 p {
   font-weight: 400;
+  color: #462F4B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #462F4B;
 }
 
 a {
-  color: #000;
+  color: #462F4B;
   text-decoration: none;
   transition: 0.5s all;
 }
 
 a:hover {
-  color: #000000;
+  color: #462F4B;
   text-decoration: none;
 }
 
@@ -217,6 +227,10 @@ h6 {
   color: #F2894F !important;
 }
 
+.text-main-2 {
+  color: #462F4B !important;
+}
+
 .bg-main {
   color: #f2f2f2 !important;
   background-color: #F2894F !important;
@@ -316,6 +330,7 @@ h6 {
   height: 30px;
   text-align: center;
   line-height: 30px;
+  border-radius: 8px !important;
 }
 
 .footer-list .list-group a {
@@ -337,7 +352,7 @@ h6 {
 }
 
 .meet {
-  padding: 30px 0px;
+  padding: 50px 120px;
 }
 
 .meet .meet-text {
@@ -349,15 +364,15 @@ h6 {
 }
 
 .meet .img-wrapper {
-  width: 319px;
-  height: 355px;
+  width: 100%;
+  height: fit-content;
   border-radius: 20px 0px 0px 0px;
 }
 
 .meet .text-wrapper {
   text-align: center;
   padding: 20px 0;
-  width: 319px;
+  width: 100%;
 }
 
 .meet .text-wrapper p {
@@ -411,7 +426,12 @@ h6 {
 }
 
 .download .download-btn-img {
-  width: 18px;
+  width: 30px;
+}
+
+.download .download-btn-img img {
+  width: 20px;
+  height: 20px;
 }
 
 .download .button-width {
@@ -443,7 +463,7 @@ h6 {
 }
 
 .aboutus-img-wrapper {
-  /* transform: rotate(45deg); */
+  transform: rotate(45deg);
 }
 
 .aboutus-img-wrapper {
@@ -466,4 +486,64 @@ h6 {
   font-weight: 500;
   line-height: 26px;
   color: #462F4B;
+}
+
+.contact-form {
+  padding: 50px 50px;
+}
+
+.contact-us {
+  padding: 50px 0;
+}
+
+.contact-us .px-50p {
+  padding: 0 50px;
+}
+
+.contact-us-heading {
+  line-height: 50px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-btn {
+  width: 230px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+  border: 0;
+  background-color: #F2894F;
+}
+
+.contact-us .contact-form .form-group .form-control {
+  border: 0px;
+  border-bottom: 1px solid #462F4B;
+  border-radius: 0;
+  color: #462F4B;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-us .contact-form .form-group .form-label {
+  color: #462F4B;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 0px -3px !important;
+}
+
+.TermAndCondition .text-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: 0.04em;
 }
